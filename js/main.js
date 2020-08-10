@@ -29,7 +29,6 @@ const messageEl = document.getElementById('message');
 const squares = document.querySelectorAll('div');
 const resetBtn = document.getElementById('resetBtn');
 
-// const getsTheSquare = document.getElementById(`sq${sqIdx}`)
 
 
 // You might choose to put your game status here
@@ -37,9 +36,6 @@ const resetBtn = document.getElementById('resetBtn');
 /*------Event Listeners------*/
 
 resetBtn.addEventListener('click', init);
-// boardEl.addEventListener('click', playerMove);
-// console.log(typeof(document.getElementById('board')))
-// document.getElementById('board').addEventListener('click', playerMove);
 document.querySelector('section').addEventListener('click', playerMove);
 
 // This is where you should put the event listener
@@ -78,7 +74,7 @@ function checkWin() {
 
 function render() {
     board.forEach(function(sq, idx){
-        console.log("for each", idx)
+        // console.log("for each", idx)
         squares[idx].innerText = players[sq]
     })
     if (winner === 'Tie'){
@@ -90,42 +86,3 @@ function render() {
     }
 }
 
-
-
-// function render(){
-//     board.forEach(function(sq, idx) {
-//         squares[idx].innerText = players[sq]
-//       });
-
-//       board.forEach(function(sq, idx){
-//         squaresEl[idx].style.background = colors[sq]
-
-//     if (winner === 'Tie') {
-//         messagesEl.innerText = "It is a tie game."
-//         }
-// }
-    // } else {
-    //     messagesEl.innerText= 'Sorry. That is not a valid move.'
-    // }
-
-// Some functions you might choose to use:
-
-// Initialization function:
-// Where you set your initial state, setting up 
-// what the board will look like upon loading
-
-// On-Click function:
-// Set up what happens when one of the elements
-// is clicked
-
-
-// Check winner function:
-// Checks the current state of the board for
-// a winner and changes the state of the winner
-// variable if so
-
-
-// Render function:
-// Displays the current state of the board
-// on the page, updating the elements to reflect
-// either X or O depending on whose turn

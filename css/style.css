@@ -1,8 +1,12 @@
 body {
     height: 100vh;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     text-align: center;
+    background-color: cornflowerblue;
+    font-family: 'VT323', monospace;
+    background-image: url("https://d36fwkt2kp2fcf.cloudfront.net/blog/wp-content/uploads/2018/08/04085145/Kilpisj%C3%A4rvi.jpg");
+    background-size: cover;
 }
 
 section.board {
@@ -11,11 +15,22 @@ section.board {
     grid-template-columns: repeat(3, 10vmin);
     grid-gap: 0vmin;
     justify-content: center;
+    text-align: center;
+    margin-top: 20px;
 }
+
 
 div {
     border: 3px solid black;
     font-size: 8vmin;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
+    justify-content: center;
+    color: #f7792c;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px white;
 }
